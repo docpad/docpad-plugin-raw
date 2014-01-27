@@ -5,17 +5,21 @@ module.exports = (BasePlugin) ->
 		# Plugin name
 		name: 'raw'
 
+		# Configuration
+		config:
+			# By default, copy the raw folder to the out directory.
+			default:
+				src: 'raw'
+
 		# Writing all files has finished
 		writeAfter: (opts,next) ->
 			# Import
-			eachr = require('eachr')
 			ncp = require('ncp')
 			safeps = require('safeps')
 			pathUtil = require('path')
 
 			# Prepare
 			docpad = @docpad
-			config = @getConfig()
 			docpadConfig = @docpad.getConfig()
 
 			# Set out directory
@@ -25,11 +29,7 @@ module.exports = (BasePlugin) ->
 			srcPath = pathUtil.normalize(docpadConfig.srcPath)
 			# @TODO: why do we need to normalize these?
 
-			if Object.keys(config).length is 0
-				config.default = {}
-				config.default.src = 'raw'
-
-			eachr config, (target, key) ->
+			process = (target, key) ->
 				docpad.log("info", "Copying #{key}")
 
 				# Use command if specified instead of ncp
@@ -66,3 +66,6 @@ module.exports = (BasePlugin) ->
 						return next(err) if err
 						docpad.log('debug', "Done copying #{key}")
 						return next()
+
+			process(target, key) for target, key of @getConfig()
+
