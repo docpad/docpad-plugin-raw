@@ -1,4 +1,6 @@
-## History
+# History
 
-v0.1.0 May 10, 2013
-	- Initial working version
+- v2.3.0 January 27, 2014
+	- Now maintained by the DocPad Extras team
+
+- No previous changelog entries found

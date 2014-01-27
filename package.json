@@ -1,46 +1,60 @@
 {
   "name": "docpad-plugin-raw",
-  "version": "2.2.3",
+  "version": "2.3.0",
   "description": "DocPad plugin that copies /raw directory to /out",
-  "homepage": "https://github.com/hypercubed/docpad-plugin-raw",
+  "homepage": "https://github.com/docpad/docpad-plugin-raw",
+  "license": {
+    "type": "MIT"
+  },
+  "badges": {
+    "travis": true,
+    "npm": true,
+    "david": true,
+    "daviddev": true,
+    "gittip": "docpad",
+    "flattr": "344188/balupton-on-Flattr",
+    "paypal": "QB8GQPZAH84N6",
+    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a"
+  },
   "keywords": [
     "docpad",
     "docpad-plugin",
-    "large files"
+    "large files",
+    "raw",
+    "rsync"
   ],
-  "author": "J. Harshbarger <> (https://github.com/hypercubed)",
+  "author": "2013+ J. Harshbarger <> (https://github.com/hypercubed)",
   "maintainers": [
     "J. Harshbarger <> (https://github.com/hypercubed)"
   ],
   "contributors": [
-    "J. Harshbarger <> (https://github.com/hypercubed)",
     "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)",
+    "Hypercubed (https://github.com/Hypercubed)",
     "Marcus Stong <stongo@gmail.com> (https://github.com/stongo)",
-    "Rob Loach <robloach@gmail.com> (http://robloach.net)"
+    "RobLoach (https://github.com/RobLoach)"
   ],
   "bugs": {
-    "url": "https://github.com/hypercubed/docpad-plugin-raw/issues"
+    "url": "https://github.com/docpad/docpad-plugin-raw/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/hypercubed/docpad-plugin-raw.git"
+    "url": "https://github.com/docpad/docpad-plugin-raw.git"
   },
   "engines": {
-    "node": ">=0.8",
-    "docpad": ">=6"
+    "node": ">=0.8"
+  },
+  "peerDependencies": {
+    "docpad": "6"
   },
   "dependencies": {
     "ncp": "~0.5.0",
-    "bal-util": "~2.0",
     "eachr": "~2.0.2",
-    "path": "~0.4.9"
+    "safeps": "~2.2.11"
   },
   "devDependencies": {
+    "projectz": "~0.3.9",
     "coffee-script": "~1.6.2",
-    "docpad": "~6.48.0",
-    "joe": "~1.2.0",
-    "joe-reporter-console": "~1.2.1",
-    "chai": "~1.7.2"
+    "docpad": "6"
   },
   "main": "./out/raw.plugin.js",
   "scripts": {
