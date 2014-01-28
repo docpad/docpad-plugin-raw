@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-raw",
-  "version": "2.3.0",
+  "version": "2.3.2",
   "description": "DocPad plugin that copies /raw directory to /out",
   "homepage": "https://github.com/docpad/docpad-plugin-raw",
   "license": {
