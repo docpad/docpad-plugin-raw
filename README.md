@@ -57,7 +57,8 @@ If you would rather use a shell command
 # ...
 plugins:
     raw:
-        command: ['rsync', '-a', './src/raw/', './out/']
+        raw:
+            command: ['rsync', '-a', './src/raw/', './out/']
 # ...
 ```
 
