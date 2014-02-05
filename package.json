@@ -48,7 +48,6 @@
   },
   "dependencies": {
     "ncp": "~0.5.0",
-    "eachr": "~2.0.2",
     "safeps": "~2.2.11"
   },
   "devDependencies": {
