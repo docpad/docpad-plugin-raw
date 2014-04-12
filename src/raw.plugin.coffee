@@ -12,6 +12,7 @@ module.exports = (BasePlugin) ->
 			ncp = require('ncp')
 			safeps = require('safeps')
 			pathUtil = require('path')
+			mkdirp = require('mkdirp')
 
 			# Prepare
 			docpad = @docpad
@@ -65,6 +66,8 @@ module.exports = (BasePlugin) ->
 					options = if target.options? and typeof target.options is 'object' then target.options else {}
 
 					docpad.log('debug', "raw plugin info... out: #{outPath}, src: #{src}, options: #{JSON.stringify(options)}")
+
+					mkdirp.sync(out)
 
 					ncp src, out, options, (err) ->
 						return next(err) if err
