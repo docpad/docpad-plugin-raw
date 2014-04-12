@@ -28,9 +28,12 @@ module.exports = (BasePlugin) ->
 			if Object.keys(config).length is 0
 				config.default = {}
 				config.default.src = 'raw'
-
+			
 			eachr config, (target, key) ->
 				docpad.log("info", "Copying #{key}")
+
+				target.src or= 'raw'
+				target.out or= ''
 
 				# Use command if specified instead of ncp
 				if target.command
@@ -56,13 +59,14 @@ module.exports = (BasePlugin) ->
 				# Otherwise use ncp by default
 				else
 					src = pathUtil.join(srcPath, target.src)
+					out = pathUtil.join(outPath, target.out)
 
 					# Use ncp settings if specified
 					options = if target.options? and typeof target.options is 'object' then target.options else {}
 
 					docpad.log('debug', "raw plugin info... out: #{outPath}, src: #{src}, options: #{JSON.stringify(options)}")
 
-					ncp src, outPath, options, (err) ->
+					ncp src, out, options, (err) ->
 						return next(err) if err
 						docpad.log('debug', "Done copying #{key}")
 						return next()
