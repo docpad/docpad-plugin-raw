@@ -11,6 +11,7 @@ Copies all files in the raw directory to out.  Useful for large files that cause
 [![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
 [![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
 [![BitCoin donate button](http://img.shields.io/bitcoin/donate.png?color=yellow)](https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a "Donate once-off to this project using BitCoin")
+[![Wishlist browse button](http://img.shields.io/wishlist/browse.png?color=yellow)](http://amzn.com/w/2F8TXKSNAFG4V "Buy an item on our wishlist for us")
 
 <!-- /BADGES -->
 
@@ -101,6 +102,7 @@ No sponsors yet! Will you be the first?
 [![Flattr donate button](http://img.shields.io/flattr/donate.png?color=yellow)](http://flattr.com/thing/344188/balupton-on-Flattr "Donate monthly to this project using Flattr")
 [![PayPayl donate button](http://img.shields.io/paypal/donate.png?color=yellow)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=QB8GQPZAH84N6 "Donate once-off to this project using Paypal")
 [![BitCoin donate button](http://img.shields.io/bitcoin/donate.png?color=yellow)](https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a "Donate once-off to this project using BitCoin")
+[![Wishlist browse button](http://img.shields.io/wishlist/browse.png?color=yellow)](http://amzn.com/w/2F8TXKSNAFG4V "Buy an item on our wishlist for us")
 
 ### Contributors
 
@@ -109,6 +111,7 @@ These amazing people have contributed code to this project:
 - [Benjamin Lupton](https://github.com/balupton) <b@lupton.cc> — [view contributions](https://github.com/docpad/docpad-plugin-raw/commits?author=balupton)
 - [Hypercubed](https://github.com/Hypercubed) — [view contributions](https://github.com/docpad/docpad-plugin-raw/commits?author=Hypercubed)
 - [Marcus Stong](https://github.com/stongo) <stongo@gmail.com> — [view contributions](https://github.com/docpad/docpad-plugin-raw/commits?author=stongo)
+- [nsonnad](https://github.com/nsonnad) — [view contributions](https://github.com/docpad/docpad-plugin-raw/commits?author=nsonnad)
 - [RobLoach](https://github.com/RobLoach) — [view contributions](https://github.com/docpad/docpad-plugin-raw/commits?author=RobLoach)
 
 [Become a contributor!](https://github.com/docpad/docpad-plugin-raw/blob/master/CONTRIBUTING.md#files)

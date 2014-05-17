@@ -14,7 +14,8 @@
     "gittip": "docpad",
     "flattr": "344188/balupton-on-Flattr",
     "paypal": "QB8GQPZAH84N6",
-    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a"
+    "bitcoin": "https://coinbase.com/checkouts/9ef59f5479eec1d97d63382c9ebcb93a",
+    "wishlist": "http://amzn.com/w/2F8TXKSNAFG4V"
   },
   "keywords": [
     "docpad",
@@ -31,6 +32,7 @@
     "Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)",
     "Hypercubed (https://github.com/Hypercubed)",
     "Marcus Stong <stongo@gmail.com> (https://github.com/stongo)",
+    "nsonnad (https://github.com/nsonnad)",
     "RobLoach (https://github.com/RobLoach)"
   ],
   "bugs": {
@@ -52,12 +54,15 @@
     "safeps": "~2.2.11"
   },
   "devDependencies": {
-    "projectz": "~0.3.9",
+    "projectz": "~0.3.13",
     "coffee-script": "~1.7.0",
     "docpad": "6"
   },
   "main": "./out/raw.plugin.js",
   "scripts": {
     "test": "node ./out/raw.test.js"
+  },
+  "cakeConfiguration": {
+    "COFFEE_SRC_PATH": "src"
   }
 }
