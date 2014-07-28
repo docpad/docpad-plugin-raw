@@ -12,6 +12,8 @@ module.exports = (BasePlugin) ->
 			ncp = require('ncp')
 			safeps = require('safeps')
 			pathUtil = require('path')
+			mkdirp = require('mkdirp')
+			async = require('async')
 
 			# Prepare
 			docpad = @docpad
@@ -30,7 +32,15 @@ module.exports = (BasePlugin) ->
 				config.default.src = 'raw'
 
 			eachr config, (target, key) ->
-				docpad.log("info", "Copying #{key}")
+				config[key].name = key
+
+			targets = (config[target] for target of config)
+
+			iterator = (target, next) ->
+				docpad.log("info", "Copying #{target.name}")
+
+				target.src or= 'raw'
+				target.out or= ''
 
 				# Use command if specified instead of ncp
 				if target.command
@@ -56,13 +66,22 @@ module.exports = (BasePlugin) ->
 				# Otherwise use ncp by default
 				else
 					src = pathUtil.join(srcPath, target.src)
+					out = pathUtil.join(outPath, target.out)
 
 					# Use ncp settings if specified
 					options = if target.options? and typeof target.options is 'object' then target.options else {}
 
-					docpad.log('debug', "raw plugin info... out: #{outPath}, src: #{src}, options: #{JSON.stringify(options)}")
+					docpad.log('debug', "raw plugin info... out: #{out}, src: #{src}, options: #{JSON.stringify(options)}")
 
-					ncp src, outPath, options, (err) ->
+					mkdirp.sync(out)
+
+					ncp src, out, options, (err) ->
 						return next(err) if err
-						docpad.log('debug', "Done copying #{key}")
+						docpad.log('debug', "Done copying #{target.name}")
 						return next()
+
+			finished = (err) ->
+				throw err if err
+				next()
+
+			async.each targets, iterator, finished
