@@ -1,5 +1,4 @@
 # Raw Files Plugin for [DocPad](http://docpad.org)
-Copies all files in the raw directory to out.  Useful for large files that cause out of memory error when placed in files directory.
 
 <!-- BADGES/ -->
 
@@ -15,6 +14,9 @@ Copies all files in the raw directory to out.  Useful for large files that cause
 [![Wishlist browse button](https://img.shields.io/badge/wishlist-donate-yellow.svg)](http://amzn.com/w/2F8TXKSNAFG4V "Buy an item on our wishlist for us")
 
 <!-- /BADGES -->
+
+
+Copies all files in the raw directory to out.  Useful for large files that cause out of memory error when placed in files directory.
 
 
 ## Install
