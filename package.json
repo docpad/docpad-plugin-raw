@@ -55,8 +55,8 @@
     "safeps": "~2.2.11"
   },
   "devDependencies": {
-    "projectz": "~0.3.17",
-    "coffee-script": "~1.8.0",
+    "projectz": "^0.4.2",
+    "coffee-script": "^1.9.0",
     "docpad": "6"
   },
   "main": "./out/raw.plugin.js",
