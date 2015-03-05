@@ -1,7 +1,7 @@
 # Export Plugin
 module.exports = (BasePlugin) ->
 	# Define Plugin
-	class raw extends BasePlugin
+	class RawPlugin extends BasePlugin
 		# Plugin name
 		name: 'raw'
 
@@ -59,6 +59,9 @@ module.exports = (BasePlugin) ->
 
 					# Use ncp settings if specified
 					options = if target.options? and typeof target.options is 'object' then target.options else {}
+					options.stopOnErr ?= true    # Stop on the first error
+					options.clobber ?= false     # Don't overwrite files that already exist
+					options.dereference ?= true  # Follow symbolic links
 
 					docpad.log('debug', "raw plugin info... out: #{outPath}, src: #{src}, options: #{JSON.stringify(options)}")
 

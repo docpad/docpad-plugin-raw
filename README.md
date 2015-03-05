@@ -27,7 +27,7 @@ docpad install raw
 
 
 ## Configuration
-Set as many sources as you want. Path should be relative to the `src` directory. The out folder specified in docpad.coffee is used for the destination.
+Set as many sources as you want. Path should be relative to the `src` directory. The out folder specified in your [docpad configuration file](http://docpad.org/docs/config) is used for the destination.
 
 If no configuration is specified, defaults to `raw` folder
 
@@ -42,7 +42,7 @@ plugins:
 # ...
 ```
 
-You can also specify copy options as specified by ncp package
+You can also specify copy options as specified by [ncp package](https://github.com/AvianFlu/ncp):
 
 ```
 # ...
@@ -51,11 +51,12 @@ plugins:
         raw:
             src: 'raw'
             options:
-                clobber: false
+                dereference: true    # default in our plugin is `true`
+                clobber: false       # default in our plugin is `false`
 # ...
 ```
 
-If you would rather use a shell command
+You can also use a shell command instead of the ncp package if you want:
 
 ```
 # ...
@@ -66,9 +67,6 @@ plugins:
 # ...
 ```
 
-## Deployment Notes
-
-Using ncp should make this plugin work on a wide variety of platforms and hosted platforms such as Heroku
 
 <!-- HISTORY/ -->
 

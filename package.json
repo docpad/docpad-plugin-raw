@@ -1,6 +1,6 @@
 {
   "name": "docpad-plugin-raw",
-  "version": "2.3.2",
+  "version": "2.4.0",
   "description": "DocPad plugin that copies /raw directory to /out",
   "homepage": "https://github.com/docpad/docpad-plugin-raw",
   "license": {
@@ -50,7 +50,7 @@
     "docpad": "6"
   },
   "dependencies": {
-    "ncp": "~0.5.0",
+    "ncp": "^2.0.0",
     "eachr": "~2.0.2",
     "safeps": "~2.2.11"
   },
