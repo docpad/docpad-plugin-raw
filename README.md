@@ -93,6 +93,7 @@ plugins:
 
 These amazing people are maintaining this project:
 
+- Benjamin Lupton <b@lupton.cc> (https://github.com/balupton)
 - J. Harshbarger <> (https://github.com/hypercubed)
 
 ### Sponsors
