@@ -1,5 +1,8 @@
 # History
 
+## v2.4.1 March 17, 2015
+- Updated dependencies
+
 ## v2.4.0 March 5, 2015
 - Clobber now defaults to `false`, Dereference now defaults to `true`
 - Updated dependencies
