@@ -1,6 +1,7 @@
 {
+  "title": "Raw Files Plugin for DocPad",
   "name": "docpad-plugin-raw",
-  "version": "2.4.1",
+  "version": "2.5.0",
   "description": "DocPad plugin that copies /raw directory to /out",
   "homepage": "https://github.com/docpad/docpad-plugin-raw",
   "license": "MIT",
@@ -86,9 +87,9 @@
   ],
   "main": "es5/raw.plugin.js",
   "dependencies": {
-    "eachr": "^2.0.4",
+    "eachr": "^3.2.0",
     "ncp": "^2.0.0",
-    "safeps": "^4.0.0"
+    "safeps": "^7.0.1"
   },
   "devDependencies": {
     "coffee-script": "^1.12.5",

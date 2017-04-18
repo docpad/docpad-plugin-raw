@@ -1,4 +1,9 @@
-# Raw Files Plugin for [DocPad](http://docpad.org)
+<!-- TITLE/ -->
+
+<h1>Raw Files Plugin for DocPad</h1>
+
+<!-- /TITLE -->
+
 
 <!-- BADGES/ -->
 
@@ -24,11 +29,13 @@
 Copies all files in the raw directory to out.  Useful for large files that cause out of memory error when placed in files directory.
 
 
-## Install
+<!-- INSTALL/ -->
 
-```
-docpad install raw
-```
+<h2>Install</h2>
+
+Install this DocPad plugin by entering <code>docpad install raw</code> into your terminal.
+
+<!-- /INSTALL -->
 
 
 ## Configuration
