@@ -1,9 +1,16 @@
-# March 15, 2015
+# 2017 April 12
 # https://github.com/bevry/base
 
+# System Files
+**/.DS_Store
+
 # Temp Files
-**/*.log
+yarn.lock
 **/.docpad.db
+**/out.*
+**/*.log
+**/*.cpuprofile
+**/*.heapsnapshot
 
 # Build Files
 build/
@@ -11,9 +18,17 @@ components/
 bower_components/
 node_modules/
 out/
+*output/
+coffeejs/
+coffee/
+es5/
+es2015/
+esnext/
+docs/
 
 # Editor Caches
 .c9/
+.vscode/
 
 # Private Files
 .env
@@ -22,6 +37,6 @@ out/
 
 
 # =====================================
-# CUSTOM MODIFICATIONS
+# CUSTOM
 
 # None
