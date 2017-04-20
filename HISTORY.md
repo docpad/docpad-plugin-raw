@@ -1,5 +1,9 @@
 # History
 
+## v2.5.1 2017 April 18
+- Drop support for node 0.8 as tests fail
+  - Unpublished v2.5.0 as it was meant to support node 0.8
+
 ## v2.5.0 2017 April 18
 - Updated dependencies
 - Updated base files

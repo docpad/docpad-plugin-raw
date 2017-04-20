@@ -1,7 +1,7 @@
 {
   "title": "Raw Files Plugin for DocPad",
   "name": "docpad-plugin-raw",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "DocPad plugin that copies /raw directory to /out",
   "homepage": "https://github.com/docpad/docpad-plugin-raw",
   "license": "MIT",
@@ -62,7 +62,7 @@
     "url": "https://github.com/docpad/docpad-plugin-raw.git"
   },
   "engines": {
-    "node": ">=0.8"
+    "node": ">=0.10"
   },
   "editions": [
     {
