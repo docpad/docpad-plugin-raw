@@ -1,5 +1,9 @@
 # History
 
+## v2.6.0 2018 July 11
+- Updated base files using [boundation](https://github.com/bevry/boundation)
+- Compiled with CoffeeScript v2
+
 ## v2.5.1 2017 April 18
 - Drop support for node 0.8 as tests fail
   - Unpublished v2.5.0 as it was meant to support node 0.8
