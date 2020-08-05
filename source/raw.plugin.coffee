@@ -21,8 +21,8 @@ module.exports = (BasePlugin) ->
 			# Set out directory
 			# the trailing / indicates to cp that the files of this directory should be copied over
 			# rather than the directory itself
-			outPath = pathUtil.normalize(docpadConfig.outPath)
-			srcPath = pathUtil.normalize(docpadConfig.srcPath)
+			outPath = pathUtil.normalize(docpad.getPath('out'))
+			srcPath = pathUtil.normalize(docpad.getPath('source'))
 			# @TODO: why do we need to normalize these?
 
 			if Object.keys(config).length is 0
