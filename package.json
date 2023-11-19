@@ -108,7 +108,7 @@
     "docpad-baseplugin": "^1.4.0",
     "eachr": "^4.5.0",
     "ncp": "^2.0.0",
-    "safeps": "^10.14.0"
+    "safeps": "^11.2.0"
   },
   "devDependencies": {
     "@bevry/update-contributors": "^1.17.0",
